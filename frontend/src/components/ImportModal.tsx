@@ -49,7 +49,7 @@ const ImportModal: React.FC<ImportModalProps> = ({ isOpen, onClose, onSuccess })
                 type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
             });
 
-            saveAs(blob, "import-user-errors.xlsx");
+            saveAs(blob, "user-import-errors.xlsx");
         } catch (err) {
             console.error(err);
             setMessage({ type: "error", text: "Failed to download error report" });
