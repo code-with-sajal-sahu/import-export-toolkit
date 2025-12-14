@@ -1,0 +1,65 @@
+.um-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.um-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.um-header h1 {
+    font-size: 2rem;
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.um-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.table-container {
+    background: rgba(255, 255, 255, 0.05);
+    /* Glassmorphismish */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+    text-align: left;
+}
+
+.user-table th,
+.user-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.user-table th {
+    background: rgba(255, 255, 255, 0.05);
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+.user-table tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.user-table .no-data {
+    text-align: center;
+    padding: 3rem;
+    color: #888;
+}
